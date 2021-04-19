@@ -1,6 +1,5 @@
 <?php
-/* PHP program to find the length of the smallest
-substring consisting of maximum distinct characters */
+/* smallest substring consisting of maximum distinct characters */
 
 $NO_OF_CHARS=256;
 
@@ -43,7 +42,7 @@ function smallesteSubstr_maxDistictChar($str)
 			$subs_lenght = strlen($subs);
 			$sub_distinct_char = max_distinct_char($subs, $subs_lenght);
 			
-			// We have to check here both conditions together
+			// We have to check here both conditions
 			// 1. substring's distinct characters is equal
 			// to maximum distinct characters
 			// 2. substing's length should be minimum
@@ -58,12 +57,12 @@ function smallesteSubstr_maxDistictChar($str)
 }
 
 
-	// Input String
+	// Input 
 	$str = "bab";
 	
 	$len = smallesteSubstr_maxDistictChar($str);
-	echo " The length of the smallest substring"
-			." consisting of maximum distinct characters : ".$len;
+	echo " The length of smallest substring"
+			." maximum distinct characters : ".$len;
 
 ?>
 
